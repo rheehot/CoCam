@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>auth</title>
+  <script>
+    const makeAuth = (x) =>{
+      const $auth = document.getElementById('auth');
+      let authPass = String(Math.floor(Math.random()*10000)).padStart(x,'0');
+      $auth.textContent = authPass;
+    }
+  </script>
+</head>
+<body>
+  <div style ='display: flex;'>
+    <div id = 'auth'>000000</div>
+    <button onclick="makeAuth(4)">인증번호 전송</button>
+  </div>
+</body>
+</html>
