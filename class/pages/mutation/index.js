@@ -1,7 +1,14 @@
 import{useMutation, gql} from "@apollo/client";
+import {useRouter} from 'next/router';
 import{useState} from 'react';
 
 export default function MutationPage(){
+
+  const router = useRouter()
+  
+  const onClickRouter = () =>{
+    router.back();
+  }
 
   const tester = gql`
   mutation($writer: String, $password: String, $title: String, $contents: String){
@@ -59,6 +66,7 @@ export default function MutationPage(){
       제목: <input type="text" id='title' onChange={handlePosting}></input>
       내용: <input type="text" id='contents' onChange={handlePosting}></input>
       <button onClick={hadleClickOnPost}>Post</button>
+      <button onClick={onClickRouter}>toROuter</button>
     </div>
   )
 }
