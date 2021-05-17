@@ -1,13 +1,9 @@
-function solution(array, commands) {
-  let boul = [];
-   var answer = [];
-  for(let i = 0 ; i < commands.length ; i++){
-      boul = commands[i].slice(commands[i][0],commands[i][1])
-      boul.sort(function(a,b){
-          return a-b;
-      })
-      answer.push(boul[commands[i][2]]);
-  }
-  console.log(answer);
-  return answer;
+const result = [10,13];
+
+const aaa = result[0];
+const bbb = result[1];
+const[aaa,bbb] = d
+
+function getClassMate(){
+  
 }

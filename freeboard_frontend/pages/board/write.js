@@ -3,8 +3,10 @@ import{useState} from 'react';
 import {useForm} from 'react-hook-form';
 import{useMutation, gql} from "@apollo/client";
 import DaumPostcode from "react-daum-postcode";
+import {useRouter} from 'next/router';
 
 export default function BoardWritePage() {
+  const router = useRouter();
   const{handleSubmit, register} = useForm();
 
   const postContentGql = gql`
@@ -16,7 +18,7 @@ export default function BoardWritePage() {
       contents:$contents
     })
     {
-     writer,contents 
+    _id
     }
   }
   `;
@@ -29,6 +31,7 @@ export default function BoardWritePage() {
     contents: '',
   })
 
+  
 
   const handleOnChange = (e) =>{
     setInputs({
@@ -43,7 +46,8 @@ export default function BoardWritePage() {
         variables:{...inputs}
       });
       console.log('This is Mutation Function');
-      alert(result.data.createBoard.message);
+      router.push(`/board/${result.data.createBoard._id}`);
+
   }
 
   return (
