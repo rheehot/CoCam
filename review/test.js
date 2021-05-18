@@ -1,9 +1,2 @@
-const result = [10,13];
+const classmates = ['철수','영희','훈이'];
 
-const aaa = result[0];
-const bbb = result[1];
-const[aaa,bbb] = d
-
-function getClassMate(){
-  
-}

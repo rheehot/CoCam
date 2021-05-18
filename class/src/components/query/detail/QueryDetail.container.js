@@ -1,5 +1,5 @@
 import QueryDetailUI from './QueryDetail.presenter';
-import{useQuery, gql} from "@apollo/client";
+import{useQuery} from "@apollo/client";
 import{useState} from 'react';
 import {useRouter} from 'next/router';
 import {DETAIL_PROFILE} from './QueryDetail.queries';
