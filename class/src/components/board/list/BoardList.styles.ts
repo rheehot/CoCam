@@ -11,7 +11,7 @@ display: flex;
 flex-direction: column;
 max-width:1300px;
 width:100%;
-height: 350px;
+height: 700px;
 border-top: 1px solid;
 `
 export const Table_Header = styled.div`
@@ -27,28 +27,28 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-width: 150px;
+width: 10%;
 `
 export const Table_Header_Number = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
 align-items:center;
-width: 150px;
+width: 20%;
 `
 export const Table_Header_Title = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
 align-items:center;
-width: 100%;
+width: 50%;
 `
 export const Table_Header_Date = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
 align-items:center;
-width: 300px;
+width: 20%;
 `
 
 
@@ -72,25 +72,25 @@ export const Table_Body_Checkbox = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
-width: 150px;
+width: 10%;
 `
 export const Table_Body_Number = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
-width: 150px;
+width: 20%;
 `
 export const Table_Body_Title = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
-width: 100%;
+width: 50%;
 `
 export const Table_Body_Date = styled.div`
 display:flex;
 justify-content:center;
 text-align:center;
-width: 300px;
+width: 20%;
 `
 
 export const UnSelectButton = styled.button `

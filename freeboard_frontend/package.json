@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate": "graphql-codegen"
   },
   "dependencies": {
     "@apollo/client": "^3.3.16",
@@ -19,5 +20,10 @@
     "react-daum-postcode": "^2.0.6",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.5.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.21.4",
+    "@graphql-codegen/typescript": "^1.22.0",
+    "typescript": "^4.2.4"
   }
 }
